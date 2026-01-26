@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.18" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>homeTitle</string>
+     <string>SCE-UNIVERSE</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>cardDataSavePath</string>
+     <string>/home/xingguangcuican</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>settingDataSavePath</string>
+     <string>/home/xingguangcuican</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>v5DefaultSpeed</string>
+     <string>{&quot;main&quot;:&quot;0&quot;,&quot;sub&quot;:&quot;0&quot;,&quot;SP&quot;:&quot;0&quot;}</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>v5DefaultPower</string>
+     <string>{&quot;main&quot;:&quot;0&quot;,&quot;sub&quot;:&quot;0&quot;,&quot;SP&quot;:&quot;0&quot;}</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>v5DefaultStamina</string>
+     <string>{&quot;main&quot;:&quot;0&quot;,&quot;sub&quot;:&quot;0&quot;,&quot;SP&quot;:&quot;0&quot;}</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>v5DefaultGuts</string>
+     <string>{&quot;main&quot;:&quot;0&quot;,&quot;sub&quot;:&quot;0&quot;,&quot;SP&quot;:&quot;0&quot;}</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>v5DefaultWit</string>
+     <string>{&quot;main&quot;:&quot;0&quot;,&quot;sub&quot;:&quot;0&quot;,&quot;SP&quot;:&quot;0&quot;}</string>
+    </void>
+   </object>
+  </void>
+ </object>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>defaultLoopV5</string>
+     <int>1</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>port</string>
+     <int>8080</int>
+    </void>
+   </object>
+  </void>
+ </object>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowFriendshipRate</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowAllFriendshipRate</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowNonSpecialtyRate</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowAllNonSpecialtyRate</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowNonSpecialtySpRate</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowTrueSpecialtyRate</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isShowSpecialtySpRate</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isCalcV2</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isCalcV3</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isCalcV4</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isCalcV5</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isV5rectify</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isAutoSaveCardData</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isCalcDI</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isV5Speedrectify</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isV5Staminarectify</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isV5Powerrectify</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isV5Gutsrectify</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>isV5Witrectify</string>
+     <boolean>false</boolean>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>mod</string>
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

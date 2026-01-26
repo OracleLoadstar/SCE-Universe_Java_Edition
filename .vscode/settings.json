@@ -1,0 +1,35 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [],
+    "files.associations": {
+        "chrono": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "random": "cpp",
+        "any": "cpp",
+        "atomic": "cpp",
+        "charconv": "cpp",
+        "forward_list": "cpp",
+        "functional": "cpp",
+        "ios": "cpp",
+        "list": "cpp",
+        "locale": "cpp",
+        "memory": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "xhash": "cpp",
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocbuf": "cpp",
+        "xlocmes": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp"
+    }
+}

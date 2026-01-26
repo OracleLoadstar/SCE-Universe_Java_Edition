@@ -1,0 +1,7 @@
+"isShowFriendshipRate"
+"isShowAllFriendshipRate"
+"isShowNonSpecialtyRate"
+"isShowAllNonSpecialtyRate"
+"isShowSpecialtySpRate"
+"isShowNonSpecialtySpRate"	
+"isShowTrueSpecialtyRate"

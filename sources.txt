@@ -1,0 +1,17 @@
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\App\App.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\pages\welcome.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\resManager\setStore_.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\resManager\settings.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\router\core.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\router\pageheader.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\router\PageManager.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\router\pages.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\tools\gui.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\Color.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\core.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\listitem.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\Tiles.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\type.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\ui_header.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\fmt\fmt.java
+C:\Users\xingguangcuican\Desktop\Project\SCE-UNIVERSE-JAVA-EDITION\src\cn\oraclestar\sce\system\UI\fmt\rgb.java
