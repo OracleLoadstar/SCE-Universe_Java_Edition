@@ -66,14 +66,14 @@ public class App implements cn.oraclestar.sce.system.modloader.modloader_main {
 
 Common customization APIs, meow:
 
-`setManager_core`, meow:
+`setManager_core`:
 - `setManager_core.changeVaule(String,Object)`: change a setting value. String is the setting key, Object is the new value (auto-typed).
 - `setManager_core.getCore()`: returns the singleton instance of setManager.
 - `setManager_core.getVaule(String)`: get a setting value. String is the setting key, returns T and needs casting to the corresponding type.
 - `setManager_core.toggleSetting(String)`: toggle a Boolean setting, making it `!value` (true to false, false to true).
 - `setManager_core.addSet(String,Object)`: String is the key, Object is the setting value. Currently supports only String, Int, and Boolean types, with auto-typing.
 
-`router_core`, meow:
+`router_core`:
 - `router_core.addPage(Int,pageheader)`: add a page. Int is the page id (recommended to use a hash of the page name). `pageheader` is an instance of a page class extending `pageheader` (while new pages should extend `router_core`, this is for maximum compatibility).
 
 `_ui`: too many to list here, meow. Generally the method names are self-explanatory. For other TUI aspects, such as colors, you can use the `rgb` class and call `.toString()` to get a String. There is also the `fmt` class (a C++-like library, currently incomplete) and the `indicators` class (also C++-like) for displaying progress bars. These C++-like libraries can be used according to the C++ documentation and are mostly the same, meow.
@@ -86,7 +86,7 @@ The override logic is very simple: you just need to know the target pageid and r
 
 Writing a new page is very simple: just extend `router_core` and override `buildPage` and `handlePageInput`, meow.
 
-Example, meow:
+Example:
 ~~~java
 package cn.oraclestar.sce.upgrade.a26_01.system.pages;
 
