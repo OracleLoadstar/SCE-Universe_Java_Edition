@@ -1,6 +1,6 @@
 # SCE-Universe_Java_Edition
 
-中文 | English
+中文 | [English](https://github.com/OracleLoadstar/SCE-Universe_Java_Edition/blob/main/README_EN.md)
 
 本分支是`SCE-Universe`项目的`Java`实现喵。用于测试最新的版本特性和未完成/未计划的更新喵。
 

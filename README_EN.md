@@ -1,6 +1,6 @@
 # SCE-Universe_Java_Edition
 
-中文 | English
+[中文](https://github.com/OracleLoadstar/SCE-Universe_Java_Edition/blob/main/README.md) | English
 
 This branch is the Java implementation of the `SCE-Universe` project, meow. It’s for testing the latest features and unfinished / unplanned updates, meow.
 
