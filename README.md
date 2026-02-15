@@ -156,6 +156,6 @@ public class online_after extends router_core {
 
 SCE是在JDK 17下编译的，mod的JDK版本不应低于JDK17，SCE的编译也很简单喵，为了防止mod和主程序类名冲突，我们**没有**引入任何第三方库，也**没有**使用任何构建系统，你可以执行`./build.sh`编译，也可以自行用自己的方式编译该原生java项目喵，当然，关于mod的编译就看你个人喜好了喵。
 
-### 法律相关
+## 法律相关
 
 本项目采用GNU GPL 3.0协议喵。

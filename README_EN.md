@@ -158,6 +158,6 @@ You can of course reference other libraries, but please package them as a “fat
 
 SCE is compiled with JDK 17, and a mod’s JDK version should not be lower than JDK 17, meow. Compiling SCE is also simple. To prevent class name conflicts between mods and the main program, we **do not** introduce any third-party libraries and **do not** use any build system. You can run `./build.sh` to compile, or compile this plain Java project in your own way. For mod compilation, it’s up to you, meow.
 
-### Legal
+## Legal
 
 This project uses the GNU GPL 3.0 license, meow.
