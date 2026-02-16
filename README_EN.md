@@ -12,7 +12,7 @@ This branch is the Java implementation of the `SCE-Universe` project, meow. Itâ€
 
 ### 1.1 Modloader
 
-In this branch, we designed and added a Modloader, meow. Currently, you can enable the Modloader at startup with the `-mod` argument. You can place mod files in the `plugins` folder. Pay attention to the mod type: if it is a preload mod, put it under `plugins/preload`, meow.
+In this branch, we designed and added a Modloader, meow. ~~Currently, you can enable the Modloader at startup with the `-mod` argument.~~ Please using start script meow. You can place mod files in the `plugins` folder. Pay attention to the mod type: if it is a preload mod, put it under `plugins/preload`, meow.
 
 **Mod conflicts may occur at the moment, such as ID conflicts and TUI decision conflicts, meow.**
 
