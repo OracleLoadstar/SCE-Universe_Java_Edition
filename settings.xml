@@ -185,7 +185,7 @@
    <object class="java.util.HashMap">
     <void method="put">
      <string>isAutoSaveCardData</string>
-     <boolean>true</boolean>
+     <boolean>false</boolean>
     </void>
    </object>
   </void>
@@ -241,7 +241,7 @@
    <object class="java.util.HashMap">
     <void method="put">
      <string>mod</string>
-     <boolean>false</boolean>
+     <boolean>true</boolean>
     </void>
    </object>
   </void>
