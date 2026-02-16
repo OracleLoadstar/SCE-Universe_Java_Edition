@@ -12,7 +12,7 @@
 
 ### 1.1 Modloader 
 
-在本分支中，我们设计并添加了Modloader喵，~~ 目前，你可以在启动时添加`-mod`参数启用Modloader喵。~~ 请使用启动脚本喵，你可以把mod文件放在`plugins`文件夹下，注意mod类型，如果是前置mod，请放在`plugins/preload`下喵。
+在本分支中，我们设计并添加了Modloader喵，~~目前，你可以在启动时添加`-mod`参数启用Modloader喵。~~ 请使用启动脚本喵，你可以把mod文件放在`plugins`文件夹下，注意mod类型，如果是前置mod，请放在`plugins/preload`下喵。
 
 **目前可能会出现mod冲突的问题，例如ID冲突，TUI判断冲突等等**
 
