@@ -2,6 +2,8 @@
 
 中文 | [English](https://github.com/OracleLoadstar/SCE-Universe_Java_Edition/blob/main/README_EN.md)
 
+[Wiki](https://wiki.oraclestar.cn/OracleLoadstar/SCE-Universe_Java_Edition/)
+
 本分支是`SCE-Universe`项目的`Java`实现喵。用于测试最新的版本特性和未完成/未计划的更新喵。
 
 **注意：本分支不代表SCE主分支正式版本的更新，本分支主要维护者为组织成员，不代表OLS官方发布更新**
