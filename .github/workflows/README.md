@@ -30,3 +30,4 @@ This workflow automatically builds the Java application and creates a GitHub rel
 #### Output
 - GitHub release with the JAR file
 - SHA256 hash for file verification
+
