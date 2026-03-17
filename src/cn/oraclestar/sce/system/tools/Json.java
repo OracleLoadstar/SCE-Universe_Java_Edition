@@ -5,6 +5,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+/*
+################################################
+#                                              #
+#        Another:xingguangcuican6666           #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 public class Json {
     // must be a Map<String,String>
     public static String toJson(Map<String,String> a){

@@ -5,6 +5,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/*
+################################################
+#                                              #
+#        Another:xingguangcuican6666           #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 public class JsonArray {
     
     // 将Map列表转换为JSON数组字符串 "[{},{},...]"

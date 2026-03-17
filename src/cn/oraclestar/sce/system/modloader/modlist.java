@@ -9,6 +9,16 @@ import java.util.Map;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
+/*
+################################################
+#                                              #
+#        Another:xingguangcuican6666           #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 public class modlist {
     public static Map<String,Map<String,Map<String,String>>> modlist_List = new HashMap<>();
     public static Map<String,cn.oraclestar.sce.system.modloader.modloader_main> modlist_core = new HashMap<String,cn.oraclestar.sce.system.modloader.modloader_main>();

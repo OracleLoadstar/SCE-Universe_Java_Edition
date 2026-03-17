@@ -3,6 +3,16 @@ package cn.oraclestar.sce.system.setManager;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+################################################
+#                                              #
+#        Another:xingguangcuican6666           #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 // TODO setRW
 public class setRW {
     public static void write_save(){

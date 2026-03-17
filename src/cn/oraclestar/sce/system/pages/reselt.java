@@ -11,6 +11,17 @@ import cn.oraclestar.sce.system.tools.write_umaCore;
 //TODO Fix V5
 //TODO Setiings save
 
+/*
+################################################
+#                                              #
+#        Another:Lat-SKY                       #
+#        Mofity by xingguangcuican6666         #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 public class reselt extends router_core {
     @Override
     protected void buildPage()

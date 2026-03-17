@@ -7,6 +7,16 @@ import java.time.ZoneId;
 
 import cn.oraclestar.sce.system.UI.fmt.rgb;
 
+/*
+################################################
+#                                              #
+#        Another:xingguangcuican6666           #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 public class ProgressBar {
     public ProgressBar(int BarWidth,String Start,String Fill,String Lead,String Remainder,String End,rgb ForegroundColor,boolean ShowPercentage,boolean ShowElapsedTime,boolean ShowRemainingTime){
         this.BarWidth = BarWidth;

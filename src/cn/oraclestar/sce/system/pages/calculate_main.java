@@ -6,6 +6,17 @@ import cn.oraclestar.sce.system.router.pages;
 import cn.oraclestar.sce.system.router.router_core;
 import cn.oraclestar.sce.system.setManager.setManager;
 
+/*
+################################################
+#                                              #
+#        Another:Lat-SKY                       #
+#        Mofity by xingguangcuican6666         #
+#        Date:2025-11-24                       #
+#        Copyright 2025-2026 OracleLoadStar    #
+#                                              #
+################################################
+*/
+
 public class calculate_main extends router_core {
     private boolean isPass = false;
     @Override
