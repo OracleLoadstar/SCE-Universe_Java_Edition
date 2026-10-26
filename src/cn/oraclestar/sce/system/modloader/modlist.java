@@ -1,6 +1,7 @@
 package cn.oraclestar.sce.system.modloader;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.Enumeration;
@@ -8,6 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
+
+import cn.oraclestar.sce.system.tools.Logger.logger_log;
 
 /*
 ################################################
@@ -22,9 +25,9 @@ import java.util.jar.JarFile;
 public class modlist {
     public static Map<String,Map<String,Map<String,String>>> modlist_List = new HashMap<>();
     public static Map<String,cn.oraclestar.sce.system.modloader.modloader_main> modlist_core = new HashMap<String,cn.oraclestar.sce.system.modloader.modloader_main>();
-    public void loadmod(){
+    public void loadmod() throws IOException{
         File mod_folder = new File("plugins");
-        System.err.println("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath());
+        new logger_log("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath());
         if (!mod_folder.exists()) {
             mod_folder.mkdirs();
         }
@@ -57,7 +60,7 @@ public class modlist {
                                 String className = entryName.replace("/",".").substring(0,entryName.length()-6);
                                 Class<?> clazz = loader.loadClass(className);
                                 if(cn.oraclestar.sce.system.modloader.modloader_main.class.isAssignableFrom(clazz) && !clazz.isInterface()){
-                                    System.err.println("[ModLoader] 成功匹配到插件主类: " + className);
+                                    new logger_log("[ModLoader] 成功匹配到插件主类: " + className);
                                     cn.oraclestar.sce.system.modloader.modloader_main plugin = (cn.oraclestar.sce.system.modloader.modloader_main)clazz.getDeclaredConstructor().newInstance();
                                     plugin.onEnable();                                  
                                     target info = plugin.getClass().getAnnotation(target.class);
@@ -72,7 +75,7 @@ public class modlist {
                                         }
                                     }
                                     modlist_core.put(info.name(),plugin);
-                                    System.err.println("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version());
+                                    new logger_log("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version());
                                     // if(info != null)
                                     // {
                                     //     temp.put(info.author(),info.version());
@@ -95,9 +98,9 @@ public class modlist {
             }
         }
     };
-    public void _loadmod(){
+    public void _loadmod() throws IOException{
         File mod_folder = new File("plugins/preload");
-        System.err.println("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath());
+        new logger_log("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath());
         if (!mod_folder.exists()) {
             mod_folder.mkdirs();
         }
@@ -130,7 +133,7 @@ public class modlist {
                                 String className = entryName.replace("/",".").substring(0,entryName.length()-6);
                                 Class<?> clazz = loader.loadClass(className);
                                 if(cn.oraclestar.sce.system.modloader.modloader_main.class.isAssignableFrom(clazz) && !clazz.isInterface()){
-                                    System.err.println("[ModLoader] 成功匹配到插件主类: " + className);
+                                    new logger_log("[ModLoader] 成功匹配到插件主类: " + className);
                                     cn.oraclestar.sce.system.modloader.modloader_main plugin = (cn.oraclestar.sce.system.modloader.modloader_main)clazz.getDeclaredConstructor().newInstance();
                                     plugin.onEnable();                                  
                                     target info = plugin.getClass().getAnnotation(target.class);
@@ -145,7 +148,7 @@ public class modlist {
                                         }
                                     }
                                     modlist_core.put(info.name(),plugin);
-                                    System.err.println("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version());
+                                    new logger_log("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version());
                                     // if(info != null)
                                     // {
                                     //     temp.put(info.author(),info.version());

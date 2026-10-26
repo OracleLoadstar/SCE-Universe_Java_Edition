@@ -20,12 +20,14 @@ public class global {
     volatile public static umaCore_core uma1 = null;
     volatile public static umaCore_core uma0 = null;
     volatile public static List<umaCore_core> compareUma = null;
+    volatile public static Boolean debug = null;
     private global() throws Exception{
         // 获取设置实例
         cn.oraclestar.sce.system.setManager.setManager_core.getCore();
         umaCore_core uma1 = new umaCore_core();
         umaCore_core uma0 = new umaCore_core();
         List<umaCore_core> compareUma = new ArrayList<>();
+        Boolean debug = false;
     }
     public static global getcore(){
         if(core !=null || uma1 != null || uma0 !=null || compareUma != null) return core;

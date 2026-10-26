@@ -1,5 +1,9 @@
 package cn.oraclestar.sce.system.umaCore;
 
+import java.io.IOException;
+
+import cn.oraclestar.sce.system.tools.Logger.logger_log;
+
 /*
 ################################################
 #                                              #
@@ -21,7 +25,7 @@ public class umaCore_core extends umaCore_header {
         _ept = new Ept();
     }
     
-    public boolean getAttributes(String name,int type,int rate_friendshipBonus,int rate_moodEffect,int rate_traningEffect,int rate_initalFriendship,int rate_specialtyPriority,int unique_friendshipBonus,int unique_moodEffect,int unique_traningEffect,int unique_initalFriendship,int unique_specialtyPriority,int speed,int stamina,int power,int guts,int wit,int sp)
+    public boolean getAttributes(String name,int type,int rate_friendshipBonus,int rate_moodEffect,int rate_traningEffect,int rate_initalFriendship,int rate_specialtyPriority,int unique_friendshipBonus,int unique_moodEffect,int unique_traningEffect,int unique_initalFriendship,int unique_specialtyPriority,int speed,int stamina,int power,int guts,int wit,int sp) throws IOException
     {
         try
         {
@@ -47,7 +51,7 @@ public class umaCore_core extends umaCore_header {
         catch (Exception err)
         {
             
-            System.err.println("Error: " + err);
+            new logger_log("Error: " + err);
             return false;
         }
         return true;

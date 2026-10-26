@@ -1,5 +1,7 @@
 package cn.oraclestar.sce.system.umaCore;
 
+import java.io.IOException;
+
 /*
 ################################################
 #                                              #
@@ -189,7 +191,7 @@ abstract public class umaCore_header {
         this._ept = new Ept(other._ept);
     }
     //basic rate uniqe bonus
-    abstract public boolean getAttributes(String name,int type,int rate_friendshipBonus,int rate_moodEffect,int rate_traningEffect,int rate_initalFriendship,int rate_specialtyPriority,int unique_friendshipBonus,int unique_moodEffect,int unique_traningEffect,int unique_initalFriendship,int unique_specialtyPriority,int speed,int stamina,int power,int guts,int wit,int sp);
+    abstract public boolean getAttributes(String name,int type,int rate_friendshipBonus,int rate_moodEffect,int rate_traningEffect,int rate_initalFriendship,int rate_specialtyPriority,int unique_friendshipBonus,int unique_moodEffect,int unique_traningEffect,int unique_initalFriendship,int unique_specialtyPriority,int speed,int stamina,int power,int guts,int wit,int sp) throws IOException;
     //basic rate uniqe bonus
     abstract public void pushAttributes(Basic basic,Rate rate,Unique unique,Bonus bonus);
     abstract public void pushEpt(Ept ept);

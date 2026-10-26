@@ -5,6 +5,7 @@ import java.util.Map;
 import cn.oraclestar.sce.system.modloader.modlist;
 import cn.oraclestar.sce.system.modloader.modloader_main;
 import cn.oraclestar.sce.system.setManager.setManager_core;
+import cn.oraclestar.sce.system.tools.Logger.logger_log;
 
 /*
 ################################################
@@ -29,10 +30,10 @@ public class router_core extends PageManager {
             _ui.cls();
             _ui.reset();
             buildPage();
-            System.err.printf("[Settings]: 写入设置\n");
+            new logger_log("[Settings]: 写入设置\n");
             setManager_core.SaveSettings();
             _ui.run();
-            System.err.printf("[Main] 当前页面ID："+String.valueOf(_currentPage)+"\n");
+            new logger_log("[Main] 当前页面ID："+String.valueOf(_currentPage)+"\n");
             String input = _ui.getUserInput();
             nextPage = handlePageInput(input);
             if(nextPage != pages.CURRENT)return nextPage;

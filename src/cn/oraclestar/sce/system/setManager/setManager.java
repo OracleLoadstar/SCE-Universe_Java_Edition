@@ -12,6 +12,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.oraclestar.sce.system.tools.Logger.logger_log;
+
 /*
 ################################################
 #                                              #
@@ -250,12 +252,12 @@ public class setManager implements list_Boolen_Map,list_Int_Map,list_String_Map 
                 mergeMaps(list_Boolen_Map.temp_maps, (List<Map<String, Boolean>>) bData);
             }
             
-            System.err.println("[Settings] 成功从文件合并配置数据");
+            new logger_log("[Settings] 成功从文件合并配置数据");
             return true;
         } catch (Exception e){
             e.printStackTrace();
             ErrorMassger = e.getMessage();
-            System.err.println("[Settings] 加载失败或文件格式损坏，将维持当前内存状态");
+            new logger_log("[Settings] 加载失败或文件格式损坏，将维持当前内存状态");
             return false;
         }
     }

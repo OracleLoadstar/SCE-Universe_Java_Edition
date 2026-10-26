@@ -6,6 +6,7 @@ import cn.oraclestar.sce.system.pages.errorloader;
 import cn.oraclestar.sce.system.router.pages;
 import cn.oraclestar.sce.system.router.router_core;
 import cn.oraclestar.sce.system.setManager.setManager_core;
+import cn.oraclestar.sce.system.tools.Logger.logger_log;
 
 /*
 ################################################
@@ -22,10 +23,12 @@ import cn.oraclestar.sce.system.setManager.setManager_core;
 public class App {
     public static cn.oraclestar.sce.system.router.router_core router = new router_core();
     public static void main(String[] args) throws Exception {
+        // logger_log log = new logger_log();
         modlist mod = new modlist();
         
         global.getcore();
-       
+        global.debug = false;
+        new logger_log("===App Start===\n");
         // 注册
         register();
         // write_umaCore.saveRes(global.uma1);
@@ -55,12 +58,12 @@ public class App {
         }
         //设置首页
         router.setInitialPage(cn.oraclestar.sce.system.router.pages.WELCOME);
-        System.err.printf("[Main]：加载设置\n");
+        new logger_log("[Main]：加载设置\n");
         if(!setManager_core.LoadSettings()){
             router_core.addPage(pages.ERRORLOADER,new errorloader());
             router.setInitialPage(pages.ERRORLOADER);
         }
-        System.err.println("[Main] 准备启动路由...");
+        new logger_log("[Main] 准备启动路由...\n");
         router.start();
         // System.out.println("[Main] 路由已关闭。");
 

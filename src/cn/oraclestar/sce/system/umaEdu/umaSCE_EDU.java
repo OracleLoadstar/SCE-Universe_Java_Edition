@@ -1,5 +1,6 @@
 package cn.oraclestar.sce.system.umaEdu;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -155,7 +156,7 @@ public class umaSCE_EDU {
     public EPT pushLowestEpt() { return eptLowest; }
     public EPT pushExEpt() { return eptEx; }
 
-    public boolean initialize(umaCore_header uma) {
+    public boolean initialize(umaCore_header uma) throws IOException {
         cards.clear();
         //将玩家的支援卡加入队列中
         umaSCE_Card pCard = new umaSCE_Card(uma);
@@ -241,7 +242,7 @@ public class umaSCE_EDU {
         }
     }
 
-    private void roundLoop() {
+    private void roundLoop() throws IOException {
         allocate();
         //计算每个场地的收益
         pretreatment();
@@ -273,7 +274,7 @@ public class umaSCE_EDU {
         }
     }
 
-    private void pretreatment() {
+    private void pretreatment() throws IOException {
         for (Map.Entry<Integer, List<umaSCE_Card>> entry : cardAllocation.entrySet()) {
             int areaType = entry.getKey();
             List<umaSCE_Card> areaCards = entry.getValue();
@@ -522,7 +523,7 @@ public class umaSCE_EDU {
             final int runCount = Math.min(batchSize, loop - submitted);
             futures.add(executor.submit(new Callable<EptAggregate>() {
                 @Override
-                public EptAggregate call() {
+                public EptAggregate call() throws IOException {
                     umaSCE_EDU sim = new umaSCE_EDU();
                     EptAggregate agg = new EptAggregate();
                     for (int i = 0; i < runCount; i++) {
@@ -579,7 +580,7 @@ public class umaSCE_EDU {
         totalCount = 0;
     }
 
-    private EPT simulateOnce(umaCore_header uma) {
+    private EPT simulateOnce(umaCore_header uma) throws IOException {
         initialize(uma);
         for (int i = 0; i < 72; i++) {
             tidy();
