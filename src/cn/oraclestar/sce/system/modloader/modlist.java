@@ -27,7 +27,7 @@ public class modlist {
     public static Map<String,cn.oraclestar.sce.system.modloader.modloader_main> modlist_core = new HashMap<String,cn.oraclestar.sce.system.modloader.modloader_main>();
     public void loadmod() throws IOException{
         File mod_folder = new File("plugins");
-        new logger_log("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath());
+        new logger_log("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath()+"\n");
         if (!mod_folder.exists()) {
             mod_folder.mkdirs();
         }
@@ -60,7 +60,7 @@ public class modlist {
                                 String className = entryName.replace("/",".").substring(0,entryName.length()-6);
                                 Class<?> clazz = loader.loadClass(className);
                                 if(cn.oraclestar.sce.system.modloader.modloader_main.class.isAssignableFrom(clazz) && !clazz.isInterface()){
-                                    new logger_log("[ModLoader] 成功匹配到插件主类: " + className);
+                                    new logger_log("[ModLoader] 成功匹配到插件主类: " + className+"\n");
                                     cn.oraclestar.sce.system.modloader.modloader_main plugin = (cn.oraclestar.sce.system.modloader.modloader_main)clazz.getDeclaredConstructor().newInstance();
                                     plugin.onEnable();                                  
                                     target info = plugin.getClass().getAnnotation(target.class);
@@ -75,7 +75,7 @@ public class modlist {
                                         }
                                     }
                                     modlist_core.put(info.name(),plugin);
-                                    new logger_log("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version());
+                                    new logger_log("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version()+"\n");
                                     // if(info != null)
                                     // {
                                     //     temp.put(info.author(),info.version());
@@ -100,7 +100,7 @@ public class modlist {
     };
     public void _loadmod() throws IOException{
         File mod_folder = new File("plugins/preload");
-        new logger_log("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath());
+        new logger_log("[ModLoader] 正在扫描目录: " + mod_folder.getAbsolutePath()+"\n");
         if (!mod_folder.exists()) {
             mod_folder.mkdirs();
         }
@@ -133,7 +133,7 @@ public class modlist {
                                 String className = entryName.replace("/",".").substring(0,entryName.length()-6);
                                 Class<?> clazz = loader.loadClass(className);
                                 if(cn.oraclestar.sce.system.modloader.modloader_main.class.isAssignableFrom(clazz) && !clazz.isInterface()){
-                                    new logger_log("[ModLoader] 成功匹配到插件主类: " + className);
+                                    new logger_log("[ModLoader] 成功匹配到插件主类: " + className+"\n");
                                     cn.oraclestar.sce.system.modloader.modloader_main plugin = (cn.oraclestar.sce.system.modloader.modloader_main)clazz.getDeclaredConstructor().newInstance();
                                     plugin.onEnable();                                  
                                     target info = plugin.getClass().getAnnotation(target.class);
@@ -148,7 +148,7 @@ public class modlist {
                                         }
                                     }
                                     modlist_core.put(info.name(),plugin);
-                                    new logger_log("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version());
+                                    new logger_log("[ModLoader] Mod信息 "+info.name()+" "+info.author()+" "+info.version()+"\n");
                                     // if(info != null)
                                     // {
                                     //     temp.put(info.author(),info.version());
